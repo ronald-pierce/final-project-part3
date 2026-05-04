@@ -1,2 +1,3 @@
 # final-project-part3
 Adding the style
+There are a couple of updates, for starters I made the menu the place to order instead it being it's own thing, this is due to time constrant so the order.html was such a tiny edit down version of the menu. As for the second I added the bag and account to the navbar so user can go look at their list or edit their account. At first it took me awile to get the home menu to get it style, as I needed to look for codes that can work properly for the img, card, text, etc. But after finishing it, giving the style to the other html was quicker after each one. I can use some of the codes on prevause html for the curent ones I am working on the image and others.
