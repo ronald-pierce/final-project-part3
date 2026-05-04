@@ -1,0 +1,240 @@
+/*Stander reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*desktop layout*/
+
+/*to srink the logo to fit on the nav bar*/
+.logo{
+  width: 90px;
+  hight: 100px;
+}
+
+.icon-link {
+  color: #C62828;
+}
+
+/* main, img, text, and buttons style, size, fonts, and colors*/
+.history {
+  padding: 70px; 30px;
+  margin: 50px;
+  display: grid;
+  background-color: #C62828
+}
+
+.img-main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+}
+
+.img-second {
+  padding: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+}
+
+.main-h2 {
+  text-align: center;
+}
+
+.second-text {
+  text-align: center;
+}
+
+.misson {
+  display: block;
+  place-items: center;
+  width: 500px;
+  padding: 60px;
+  margin: 30px;
+  background-color: #C62828;
+}
+
+.christopher-bode {
+  display: block;
+  place-items: center;
+  width: 500px;
+  padding: 60px;
+  margin: 30px;
+  margin-left: auto;
+  background-color: #C62828;
+}
+
+.special {
+  display: block;
+  place-items: center;
+  width: 500px;
+  padding: 60px;
+  margin: 20px;
+  background-color: #C62828;
+}
+
+.img-card {
+  padding: 5px;
+  margin: 15px;
+  width: 30vh;
+  height: auto;
+}
+
+h1 {
+text-align: center;
+font-family: 'Bitter';
+font-size: 70px;
+color: white;
+}
+
+h2 {
+font-size: 50px;
+color: white;
+font-family: 'Bitter';
+}
+
+
+article {
+  place-itmes: center;
+  color: white;
+  font-family: 'Noto Sans';
+}
+
+ /*footer edits, size, font, and colors*/
+footer {
+ text-align: center;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+  background-color: #C62828;
+  font-family: 'Bitter';
+}
+
+/*making navbar look nice*/
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {background-color: #FAFAFA; padding: 1rem 2rem;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #C62828;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: red;
+}
+
+.nav-link:focus {
+  outline: 2px solid #C62828;
+  outline-offset: 2px;
+}
+
+.nav-link:active {
+  transform: scale(0.98);
+}
+
+.nav-link[aria-current="page"] {
+ background-color: #FAFAFA;
+  color: red;
+}
+
+/*Mobile layout*/
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 3;
+  }
+  
+  .nav-link {
+    width: 100%;
+    padding: 0.61rem;
+  }
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1000;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.hamburger:hover span {
+  background-color: #666;
+}
+
+@media (max-width: 768px) {
+  
+  .hamburger {
+    display: block;
+  }
+  
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  #nav-menu.active {
+    display: flex;
+  }
+  
+  #nav-menu li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #nav-menu a {
+    display: block;
+    padding: 1rem;
+  }
